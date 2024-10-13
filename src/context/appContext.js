@@ -120,7 +120,7 @@ const AppProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
 
   const myAxios = axios.create({
-    baseURL: "http://jobify-web-app-env.eba-4yvh5eut.us-east-1.elasticbeanstalk.com/jobify",
+    baseURL: "https://jobify-app.com/jobify",
   });
 
   myAxios.interceptors.request.use(
